@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\ItemController;
+use App\Http\Controllers\Api\PersonalInformationController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\ReviewController;
 use Illuminate\Http\Request;
@@ -44,3 +45,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('/items', ItemController::class);
 Route::resource('/categories', CategoryController::class);
 Route::resource('/reviews', ReviewController::class);
+Route::resource('/personal_informations', PersonalInformationController::class);
